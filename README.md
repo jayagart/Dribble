@@ -1,5 +1,5 @@
 # Project Responsive Web Design using Bootstrap
-## Date:26/12/2024
+## Date:28/12/2024
 
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
@@ -27,108 +27,166 @@ Publish the website in the LocalHost.
 
 ## PROGRAM :
 ```
+
 <html>
 <head>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
- <div class="container">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-            
-</button>
-<div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav ml-auto">
-<li class="nav-item active" >
-<a class="nav-link" href="#">Home</a>
-</li>
-<li class="nav-item ">
-<a class="nav-link" href="#">Explore</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Sign in</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Sign up</a>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-
     
-    <section class="bg-info text-darkest text-center py-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <h1 class="display-4">Mingle</h1>
-            <p class="lead">Here you can see stunning visual pictures and many arts, articles.</p>
-            <a href="#" class="btn btn-light btn-lg">Mingle with us</a>
-        </div>
-    </section>
+            <a class="navbar-brand fw-bold text-white" href="#">Dribbble</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item "><a class="nav-link" href="#">Shots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Designers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
+                    
+                    <input type="search" class="form-control w-auto" placeholder="Search" style="margin: 5px;">
 
+                
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-second class">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center  height" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Now</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button class="btn btn-outline-secondary"><i class="bg-dark bi-grid"></i></button>
+            </div>
+        </div>
+    </nav>
+
+
+    <section>
     
-    <section class="py-5 bg-light">
-    <div class="container text-center">
-    <h2 class="mb-4 text-dark">Explore...</h2>
-    <p class="lead mb-4 text-muted">Mingle is a versatile, multi-purpose platform designed to bring people, ideas, and opportunities together. Whether you're looking to connect with others, explore new content, promote your business, or access valuable tools, Mingle has something for everyone..</p>
-    <div class="row">
-            
-    <div class="col-md-4 mb-4">
-    <div class="card shadow-sm border-light">
-    <img src="im2.jpeg" class="card-img-top" alt="Shot 1">
-    <div class="card-body">
-    <h5 class="card-title text-primary">Super cars</h5>
-    <p class="card-text text-muted"> From roaring engines to sleek aerodynamics, supercars ignite passion and command attention on every road they grace...</p>
-    </div>
-    </div>
-    </div>
-    
-    <div class="col-md-4 mb-4">
-    <div class="card shadow-sm border-dark">
-    <img src="im3.jpg" class="card-img-top" alt="Shot 2">
-    <div class="card-body">
-    <h5 class="card-title text-primary">Universe News</h5>
-    <p class="card-text text-muted">Stay updated with the wonders of the cosmos with the latest universe news. From groundbreaking discoveries in astronomy to the mysteries of distant galaxies, we bring you the most fascinating stories about our ever-expanding universe...</p>
-    </div>
-    </div>
-    </div>
-            
-        <div class="col-md-4 mb-4">
-        <div class="card shadow-sm border-light">
-        <img src="im1.jpg" class="card-img-top" alt="Shot 3">
-        <div class="card-body">
-        <h5 class="card-title text-primary ">World visuals</h5>
-        <p class="card-text text-muted">Experience the beauty of our planet through stunning world visuals. From breathtaking landscapes and vibrant cityscapes to cultural moments and natural wonders, each image tells a story of Earth's diversity and splendor...</p>
+    <div class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <h1>What are you working on?</h1>
+            <p class="lead">Dribbble is show and tell for designers.</p>
+            <button class="btn btn-primary">Learn more</button>
+            <button class="btn btn-success">Sign up</button>
+            <button class="btn btn-success">Sign in</button>
         </div>
-        </div>
-        </div>
-        </div>
-        </div>
+    </div>
+
     </section>
+    <section >
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="im3.webp" class="card-img-top" >
+                    <div class="card-body">
+                        <p class="card-text">🔗 Fourplus Studio</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="im1.webp" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">🔗 Balkan Brothers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="im2.webp" class="card-img-top" >
+                    <div class="card-body">
+                        <p class="card-text">🔗 Jan Losert</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="im4.webp" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">🔗 Mattias Johansson</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="im7.webp" class="card-img-top" >
+                    <div class="card-body">
+                        <p class="card-text">🔗 Muti</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="im8.webp" class="card-img-top" >
+                    <div class="card-body">
+                        <p class="card-text">🔗 One week wonders</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="im5.webp" class="card-img-top" >
+                    <div class="card-body">
+                        <p class="card-text">🔗 Dalibor Pajic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="im6.webp" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">🔗 Illiyin Studio</p>
+                    </div>
+                </div>
+            </div>
 
+            
+        </div>
+    </div>
+</section>
 
-    <footer class="bg-dark text-white py-4 text-center">
-        <p class="mb-0">&copy;Desingned & Developed by Jayagar.T</p>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 All Rights Reserved by Jayagar.T</p>
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
 
 
 ```
 
 ## OUTPUT:
 
-![alt text](<jay/navapp/static/Screenshot 2024-12-26 184200.png>)
-
+![alt text](<jay/navapp/static/Screenshot 2024-12-28 181449.png>)
+![alt text](<jay/navapp/static/Screenshot 2024-12-28 181456.png>)
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
